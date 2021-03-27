@@ -1,4 +1,4 @@
 #!/bin/bash
 git pull 
-sudo gunicorn_blog restart
-sudo nginx restart
+sudo service gunicorn_blog restart
+sudo service nginx restart
