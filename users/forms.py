@@ -8,7 +8,7 @@ from .models import CustomUser
 class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = CustomUser
-        fields = UserCreationForm.Meta.fields + ('age',)
+        fields = UserCreationForm.Meta.fields
 
 
 class CustomUserChangeForm(UserChangeForm):
