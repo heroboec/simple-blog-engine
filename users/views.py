@@ -12,6 +12,12 @@ User = get_user_model()
 
 class SignupView(CreateView):
     model = User
+    fields = [
+        'username', 
+        'first_name', 
+        'last_name',
+        'password'
+    ]
     # form_class = CustomUserCreationForm
     success_url = reverse_lazy('login')
     template_name = 'singup.html'
